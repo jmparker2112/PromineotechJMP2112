@@ -66,6 +66,24 @@ public class DifferentCollections {
 		}
 		
 		
+		Set<String> vegetables = new HashSet<String>();
+		
+		vegetables.add("Carrot");
+		System.out.println(vegetables);
+		vegetables.add("Onion");
+		System.out.println(vegetables);
+		vegetables.add("Brocoli");
+		System.out.println(vegetables);
+		vegetables.add("Asparagus");
+		System.out.println(vegetables);
+		vegetables.add("Brocoli");
+		System.out.println(vegetables);
+		vegetables.add(null);
+		System.out.println(vegetables);
+		vegetables.add(null);
+		System.out.println(vegetables);
+		
+		
 		
 		/*Map
 		 * 
