@@ -5,24 +5,49 @@
 //
 package Week04;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Week04StringBuilderListSetMapLab {
 
 	public static void main(String[] args) {
 
 		// 1. Why would we use a StringBuilder instead of a String?
+		// we would use a StringBuilder instead of a string as it mutable or better use of memory
 		// 		a. Instantiate a new StringBuilder
 		//		b. Append the characters 0 through 9 to it separated by dashes
 		// 				Note:  make sure no dash appears at the end of the StringBuilder
-
+		StringBuilder sb = new StringBuilder();
+		
+		for (int i = 0; i <= 9; i++) {
+			if (i < 9) {
+				sb.append(i + "-");
+			} else {
+				sb.append(i);
+			}
+		}
+		System.out.println(sb);
 		
 		// 2. List of String:
 		//		a. Create a list of Strings 
 		//		b. Add 5 Strings to it, each with a different length
 
+		List<String>  guitars = new ArrayList<String>();
+		guitars.add("Fender");
+		guitars.add("Schecter");
+		guitars.add("ESP");
+		guitars.add("Epiphone");
+		guitars.add("Rickenbacker");
 		
+		for (String guitar : guitars) {
+			System.out.println(guitar);
+		}
+				
 		// 3. Write and test a method that takes a list of strings 
 		//			and returns the shortest string
 
+		System.out.println("The Shortest String is : " + findShortestString(guitars));
+		
 		
 		// 4. Write and test a method that takes a list of strings 
 		//			and returns the list with the first and last element switched
@@ -134,6 +159,13 @@ public class Week04StringBuilderListSetMapLab {
 	
 	// Method 3:
 	
-	
+	public static String findShortestString(List<String> list) {
+		String shortest = list.get(0);
+		for (String string : list) {
+			if (string.length() < shortest.length()) {
+				shortest = string;
+			}
+		} return shortest;
+	}
 
 }
