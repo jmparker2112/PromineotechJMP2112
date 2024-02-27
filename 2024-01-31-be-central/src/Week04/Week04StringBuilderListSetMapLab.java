@@ -52,11 +52,16 @@ public class Week04StringBuilderListSetMapLab {
 		// 4. Write and test a method that takes a list of strings 
 		//			and returns the list with the first and last element switched
 
+		swapStringElements(guitars, 0, (guitars.size() -1));
+		for (String guitar : guitars) {
+			System.out.println(guitar);
+		}
 		
 		// 5. Write and test a method that takes a list of strings 
 		//			and returns a string with all the list elements concatenated to each other,
 		// 			separated by a comma
 
+		System.out.println(catStrings(guitars));
 		
 		// 6. Write and test a method that takes a list of strings and a string 
 		//			and returns a new list with all strings from the original list
@@ -147,13 +152,29 @@ public class Week04StringBuilderListSetMapLab {
 	
 	// Method 6:
 	
-
 	
 	// Method 5:
 	
-	
+	public static StringBuilder catStrings(List<String> list) {
+		StringBuilder catWord = new StringBuilder();
+		for (String word : list) {
+			catWord.append(word + ", ");
+		}
+		
+		return catWord;
+	}
 	
 	// Method 4:
+	
+	public static List<String> swapStringElements(List<String> list, int x, int y) {
+
+		    String temp = list.get(x);
+		    list.set(x, list.get(y));
+		    list.set(y, temp);
+		    return list;
+		} 
+
+		
 	
 	
 	
