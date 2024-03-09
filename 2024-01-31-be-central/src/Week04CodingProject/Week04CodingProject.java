@@ -2,7 +2,7 @@ package Week04CodingProject;
 
 public class Week04CodingProject {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) { 
 		// TODO Auto-generated method stub
 		// here we are declaring an array of integers named ages	
 		//Week04 Coding Project
