@@ -242,6 +242,19 @@ public class Week04StringBuilderListSetMapLab {
 		}
 		return "";
 	}
+
+
+
+
+	// Method 14:
+	public static String findKeyResult(Map<String, String> map, String string) {
+		for (String key : map.keySet()) {
+			if (key.equals(string)) {
+				return map.get(key);
+			}
+		}
+		return "";
+	}
 	
 	// Method 12:
 	public static Set<Integer> findEvens(Set<Integer> set) {

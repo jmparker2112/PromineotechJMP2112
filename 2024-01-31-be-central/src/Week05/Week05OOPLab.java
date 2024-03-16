@@ -113,7 +113,7 @@ public class Week05OOPLab {
 			System.out.println("\nQuestion 5: Create Game");
 			// Call your method here
 
-			int numberOfPlayers = 4;
+			int numberOfPlayers = 2;
 			Map<String, List<Card>> gameBoard = createGame(numberOfPlayers);
 			
 			
