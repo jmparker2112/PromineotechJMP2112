@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Week03.Week03ArrayAndMethodsLab.java&apos; to &apos;Week03ArraysAndMethodsLab.java&apos;&#x0D;&#x0A;- Original project: &apos;2024-01-31-be-central&apos;&#x0D;&#x0A;- Original element: &apos;Week03.Week03ArrayAndMethodsLab.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Week03.Week03ArraysAndMethodsLab.java&apos;" description="Rename compilation unit &apos;Week03ArrayAndMethodsLab.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Week03{Week03ArrayAndMethodsLab.java" name="Week03ArraysAndMethodsLab.java" references="false" stamp="1708292946936" version="1.0"/>
+</session>
