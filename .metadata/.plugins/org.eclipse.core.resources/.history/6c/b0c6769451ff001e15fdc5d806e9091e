@@ -189,14 +189,8 @@ private List<Material> fetchMaterialsForProject(Connection conn, Integer project
 
 public boolean modifyProjectDetails(Project project) {
 	// @formatter:off
-	String sql = ""
-			+ "UPDATE " + PROJECT_TABLE + " Set "
-			+ "project_name = ?, " 
-			+ "estimated_hours = ?, " 
-			+ "actual_hours = ?, " 
-			+ "difficulty = ?, " 
-			+ "notes = ? " 
-			+ "WHERE project_id = ?";
+	String sql = ""	+ "UPDATE " + PROJECT_TABLE + " Set" + "project_name = ?, " + "estimated_hours = ?, " 
+	+ "actual_hours = ?, " + "difficulty = ?, " + "notes = ? " + "WHERE project_id = ?";
 	// @formatter:on
 	
 	try(Connection conn = DbConnection.getConnection()) {
